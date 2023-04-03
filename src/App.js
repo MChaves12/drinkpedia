@@ -1,10 +1,10 @@
 import './App.css';
-import Drink from './components/Drink';
+import DrinkBanner from './components/RandomDrinkBanner'
 
 function App() {
   return (
     <div className="App">
-      <Drink />
+      <DrinkBanner />
     </div>
   );
 }

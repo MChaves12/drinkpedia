@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 
-function Drink () {
+function RandomDrinkBanner () {
     return(
         <>
         <Link className='drink-link'>
@@ -17,4 +17,4 @@ function Drink () {
     );
 };
 
-export default Drink;
+export default RandomDrinkBanner;
