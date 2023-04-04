@@ -8,20 +8,23 @@ function ByIngredient () {
     const [drinks, setDrinks] = useState([]);
 
     useEffect(() =>{
-        axios.get("www.thecocktaildb.com/api/json/v1/1/filter.php?a=Alcoholic")
+        axios.get("https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=Gin")
         .then((response) => {
             setDrinks(response.data.drinks);
         });
     }, []);
 
     return(
-        <div>
-            {drinks.map(drink => {
-                return (
-                    <RecepiLink drinkIMG={drink.strDrinkThumb} drinkName={drink.strDrink} />
-                )
-            })}
-        </div>
+        <>
+            <h2>RECEITAS</h2>
+                <div className='drinks-alcoolicos-page'>  
+                    {drinks.map(drink => {
+                        return (
+                            <RecepiLink key={drink.idDrink} drinkIMG={drink.strDrinkThumb} drinkName={drink.strDrink} />
+                        )
+                    })}
+                </div>
+        </>
     );
 };
 

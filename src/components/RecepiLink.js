@@ -1,8 +1,8 @@
 
-function RecepiLink ({drinkImg, drinkName}) {
+function RecepiLink ({drinkIMG, drinkName}) {
     return(
         <div className='recepiLink-container'>
-            <img src={drinkImg} alt='drink-name'></img>
+            <img src={drinkIMG} alt='drink-name'></img>
             <hr></hr>
             <p>{drinkName}</p>
             <hr></hr>
