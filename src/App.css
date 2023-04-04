@@ -1,3 +1,9 @@
+.App {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
 .drink-recomendado-container {
   width: 700px;
   height: 400px;
@@ -41,6 +47,45 @@ h1{
 }
 .drink-link {
   text-decoration: none;
+  color: white; 
+}
+
+.recepiLink-container {
+  width: 200px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px solid grey;
+  border-radius: 5px;
+}
+
+.recepiLink-container img {
+  object-fit: fill;
+  width: 190px;
+  height: 70%;
+  padding: 0px;
+  border-radius: 5px;
+}
+
+.recepiLink-container p {
+  margin: 0px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.recepiLink-container hr {
+  border: 1px solid grey;
+  width: 200px;
+  margin: 0px;
+}
+
+.recepiLinkBtn {
+  width: 150px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(255, 136, 0);
   color: white;
-  
 }
