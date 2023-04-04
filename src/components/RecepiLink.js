@@ -1,11 +1,10 @@
-import drinkImg from '../assets/margarita.jpg';
 
-function RecepiLink () {
+function RecepiLink ({drinkIMG, drinkName}) {
     return(
         <div className='recepiLink-container'>
-            <img src={drinkImg} alt='drink-name'></img>
+            <img src={drinkIMG} alt='drink-name'></img>
             <hr></hr>
-            <p>Drink Name</p>
+            <p>{drinkName}</p>
             <hr></hr>
             <button className='recepiLinkBtn'>Show me the Recepi</button>
         </div>
