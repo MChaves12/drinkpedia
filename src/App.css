@@ -108,3 +108,27 @@ h2 {
   margin-left: 150px;
   margin-top: 35px;
 }
+
+.recepi-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.recepi-instructions-container{
+  width: 500px;
+  padding-right: 250px;
+  font-size: 20px;
+}
+
+.recepi-instructions-container li, ul {
+ list-style: none;
+ padding: 0px;
+}
+
+.recepi-img {
+  width: 500px;
+  border-radius: 5px;
+  box-shadow: 3px 2px 2px grey;
+
+}

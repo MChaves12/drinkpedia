@@ -1,10 +1,10 @@
 import './App.css';
-import ByIngredient from './pages/ByIngredient';
+import Recepi from './pages/Recepi';
 
 function App() {
   return (
     <div className="App">
-      <ByIngredient />
+      <Recepi />
     </div>
   );
 }
