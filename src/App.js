@@ -1,7 +1,8 @@
 import './App.css';
 import Footer from './components/Footer';
 import NavBar from './components/Navbar';
-import ByIngredient from './pages/ByIngredient';
+//import ByIngredient from './pages/ByIngredient';
+import DrinksSemAlcool from './pages/DrinksAlcoolicos'
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
 
         <Route path="*" element={<ErrorPage />} />
       </Routes>*/}
-      <ByIngredient />
+      <DrinksSemAlcool/>
       <Footer/>
     </div>
   );
