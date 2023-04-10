@@ -16,8 +16,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/nonalcooholic" element={<DrinksNaoAlcoolicos />} />
         <Route path="/alcooholic" element={<DrinksAlcoolicos />} />
-        <Route path="/alcooholic/:idDrink" element={<Recepi />} />
-        <Route path="/nonalcooholic/:idDrink" element={<Recepi />} />
+        <Route path="/:idDrink" element={<Recepi />} />
       </Routes>
       <Footer/>
     </div>

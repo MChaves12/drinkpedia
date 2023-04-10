@@ -16,7 +16,7 @@ function DrinksAlcoolicos () {
     return(
         <>
             <h2>RECEITAS</h2>
-                <div className='.drinks-alcoolicos-page'>  
+                <div className='drinks-alcoolicos-page'>  
                     {drinks.map(drink => {
                         return (
                             <RecipeLink key={drink.idDrink} drinkIMG={drink.strDrinkThumb} drinkName={drink.strDrink} idDrink={drink.idDrink} />
