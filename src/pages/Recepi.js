@@ -1,15 +1,15 @@
 import { useState, useEffect } from 'react';
-import axios from 'axios';
+import apiControl from '../controls/apiControl'
 
 function Recepi (){
     
     const [recepi, setRecepi] = useState({});
+    
 
     useEffect(() =>{
-        axios.get("https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=11010")
+        apiControl.getDrinkRecepi()
         .then((response) => {
-            setRecepi(response.data.drinks);
-            console.log(response.data.drinks)
+            setRecepi(response);
         });
     }, []);
 

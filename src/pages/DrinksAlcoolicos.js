@@ -1,10 +1,9 @@
 import { useState, useEffect } from 'react';
-import axios from 'axios';
 import RecipeLink from '../components/RecipeLink'
+import axios from 'axios'
+import api from '../controls/apiControl'
 
 function DrinksAlcoolicos () {
-
-
     const [drinks, setDrinks] = useState([]);
 
     useEffect(() =>{
@@ -17,10 +16,10 @@ function DrinksAlcoolicos () {
     return(
         <>
             <h2>RECEITAS</h2>
-                <div className='drinks-com-alcool-page'>  
+                <div className='.drinks-alcoolicos-page'>  
                     {drinks.map(drink => {
                         return (
-                            <RecipeLink key={drink.idDrink} drinkIMG={drink.strDrinkThumb} drinkName={drink.strDrink} />
+                            <RecipeLink key={drink.idDrink} drinkIMG={drink.strDrinkThumb} drinkName={drink.strDrink} idDrink={drink.idDrink} />
                         )
                     })}
                 </div>
