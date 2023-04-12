@@ -7,7 +7,7 @@ function RecipeLink ({drinkIMG, drinkName, idDrink}) {
             <hr className='recepiLink-hr'></hr>
             <p className='recepiLink-p'>{drinkName}</p>
             <hr className='recepiLink-hr'></hr>
-            <Link to={`/i=${idDrink}`}><button className='recepiLinkBtn'>Como fazer</button></Link> 
+            <Link to={`/${idDrink}`}><button className='recepiLinkBtn'>Como fazer</button></Link> 
         </div>
     );
 };

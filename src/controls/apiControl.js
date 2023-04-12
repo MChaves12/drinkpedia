@@ -4,13 +4,13 @@ const apiURL = 'https://www.thecocktaildb.com/api/json/v1/1';
 
 class apiControl { 
     constructor () {
-        this.api = axios.create({apiURL});
+        this.api = axios.create({baseURL: apiURL});
     }
 
     async getAcoolicDrinks () {
         try {
             const { data } = await this.api.get('/filter.php?a=Alcoholic');
-            return data;
+            return data.drinks;
         } catch (error) {
             throw error
         }
@@ -19,7 +19,7 @@ class apiControl {
     async getNonAcoolicDrinks () {
         try {
             const { data } = await this.api.get('/filter.php?a=Non_Alcoholic');
-            return data;
+            return data.drinks;
         } catch (error) {
             throw error
         }
@@ -28,7 +28,7 @@ class apiControl {
     async getDrinkRecepi (idDrink) {
         try {
             const { data } = await this.api.get(`/lookup.php?i=${idDrink}`);
-            return data;
+            return data.drinks[0];
         } catch (error) {
             throw error
         }

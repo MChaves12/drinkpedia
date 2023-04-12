@@ -1,12 +1,12 @@
 import './App.css';
 import Footer from './components/Footer';
 import NavBar from './components/Navbar';
-import DrinksAlcoolicos from './pages/DrinksAlcoolicos'
-import DrinksNaoAlcoolicos from './pages/DrinksSemAlcool'
+import DrinksAlcoolicos from './pages/DrinksAlcoolicos';
+import DrinksNaoAlcoolicos from './pages/DrinksSemAlcool';
 import Recepi from './pages/Recepi';
-import HomePage from './pages/HomePage'
+import HomePage from './pages/HomePage';
 
-import { Route, Routes } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
   return (

@@ -3,7 +3,7 @@ import RecipeLink from '../components/RecipeLink'
 import apiControl from '../controls/apiControl'
 
 function DrinksSemAlcool () {
-    const [drinks, setDrinks] = useState({});
+    const [drinks, setDrinks] = useState([]);
 
     useEffect(() =>{
         apiControl.getNonAcoolicDrinks()

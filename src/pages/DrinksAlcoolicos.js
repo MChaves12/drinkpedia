@@ -1,15 +1,14 @@
 import { useState, useEffect } from 'react';
 import RecipeLink from '../components/RecipeLink'
-import axios from 'axios'
-import api from '../controls/apiControl'
+import apiControl from '../controls/apiControl'
 
 function DrinksAlcoolicos () {
     const [drinks, setDrinks] = useState([]);
-
+   
     useEffect(() =>{
-        axios.get("https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Alcoholic")
+        apiControl.getAcoolicDrinks()
         .then((response) => {
-            setDrinks(response.data.drinks);
+            setDrinks(response);
         });
     }, []);
 
