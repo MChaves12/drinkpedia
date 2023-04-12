@@ -25,7 +25,7 @@ class apiControl {
         }
     }
     
-    async getDrinkRecepi (idDrink) {
+    async getDrinkRecipe (idDrink) {
         try {
             const { data } = await this.api.get(`/lookup.php?i=${idDrink}`);
             return data.drinks[0];
