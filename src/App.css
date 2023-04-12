@@ -107,31 +107,14 @@ h2 {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  width: 990px;
-  margin-left: 250px;
+  width: 120px;
+  margin-left: 150px;
   margin-top: 35px;
 }
 
-.recepi-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.recepi-instructions-container{
-  width: 500px;
-  padding-right: 250px;
-  font-size: 20px;
-}
-
-.recepi-instructions-container li, ul {
- list-style: none;
- padding: 0px;
-}
-
-.recepi-img {
-  width: 500px;
-  border-radius: 5px;
-  box-shadow: 3px 2px 2px grey;
-
+.banner-img {
+  object-fit: fill;
+  width: 100%;
+  height: 70;
+  padding: 0px;
 }

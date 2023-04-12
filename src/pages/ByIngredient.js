@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import RecipeLink from '../components/RecepiLink'
+import RecipeLink from '../components/RecipeLink'
 
 function ByIngredient () {
 

@@ -1,10 +1,11 @@
 import './App.css';
 import Footer from './components/Footer';
 import NavBar from './components/Navbar';
+//import ByIngredient from './pages/ByIngredient';
+import HomePage from './pages/HomePage';
 import DrinksAlcoolicos from './pages/DrinksAlcoolicos';
 import DrinksNaoAlcoolicos from './pages/DrinksSemAlcool';
-import Recepi from './pages/Recepi';
-import HomePage from './pages/HomePage';
+import Receitas from './pages/Recipe';
 
 import { Route, Routes } from 'react-router-dom';
 
@@ -14,9 +15,11 @@ function App() {
       <NavBar/>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/nonalcooholic" element={<DrinksNaoAlcoolicos />} />
-        <Route path="/alcooholic" element={<DrinksAlcoolicos />} />
-        <Route path="/:idDrink" element={<Recepi />} />
+        <Route path="/receitas" element={<Receitas />} />
+        <Route path="/drinks-nao-alcoolicos" element={<DrinksNaoAlcoolicos />} />
+        <Route path="/drinks-alcoolicos" element={<DrinksAlcoolicos />} />
+
+        <Route path="*" element={<p>ErrorPage</p>} />
       </Routes>
       <Footer/>
     </div>
