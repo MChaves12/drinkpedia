@@ -20,12 +20,12 @@ export default function Footer() {
 
             <ul className="list-unstyled">
               <li>
-                <a href="#!" className="text-white">
+                <a href="alcooholic" className="text-white">
                   Drinks Alcoólicos
                 </a>
               </li>
               <li>
-                <a href="#!" className="text-white">
+                <a href="nonalcooholic" className="text-white">
                   Drinks Não Alcoólicos
                 </a>
               </li>
