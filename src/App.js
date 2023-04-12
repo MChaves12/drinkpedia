@@ -1,22 +1,23 @@
 import './App.css';
 import Footer from './components/Footer';
 import NavBar from './components/Navbar';
-//import ByIngredient from './pages/ByIngredient';
-import DrinksSemAlcool from './pages/DrinksAlcoolicos'
+import DrinksAlcoolicos from './pages/DrinksAlcoolicos';
+import DrinksNaoAlcoolicos from './pages/DrinksSemAlcool';
+import Recepi from './pages/Recepi';
+import HomePage from './pages/HomePage';
+
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
       <NavBar/>
-      {/*<Routes>
+      <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/receitas" element={<Receitas />} />
-        <Route path="/drinks-nao-alcoolicos" element={<DrinksNaoAlcoolicos />} />
-        <Route path="/drinks-alcoolicos" element={<DrinksAlcoolicos />} />
-
-        <Route path="*" element={<ErrorPage />} />
-      </Routes>*/}
-      <DrinksSemAlcool/>
+        <Route path="/nonalcooholic" element={<DrinksNaoAlcoolicos />} />
+        <Route path="/alcooholic" element={<DrinksAlcoolicos />} />
+        <Route path="/:idDrink" element={<Recepi />} />
+      </Routes>
       <Footer/>
     </div>
   );

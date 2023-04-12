@@ -1,16 +1,14 @@
 import { useState, useEffect } from 'react';
-import axios from 'axios';
 import RecipeLink from '../components/RecipeLink'
+import apiControl from '../controls/apiControl'
 
 function DrinksSemAlcool () {
-
-
     const [drinks, setDrinks] = useState([]);
 
     useEffect(() =>{
-        axios.get("https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Non_Alcoholic")
+        apiControl.getNonAcoolicDrinks()
         .then((response) => {
-            setDrinks(response.data.drinks);
+            setDrinks(response);
         });
     }, []);
 
@@ -20,7 +18,7 @@ function DrinksSemAlcool () {
                 <div className='drinks-sem-alcool-page'>  
                     {drinks.map(drink => {
                         return (
-                            <RecipeLink key={drink.idDrink} drinkIMG={drink.strDrinkThumb} drinkName={drink.strDrink} />
+                            <RecipeLink key={drink.idDrink} drinkIMG={drink.strDrinkThumb} drinkName={drink.strDrink} idDrink={drink.idDrink} />
                         )
                     })}
                 </div>

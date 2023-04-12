@@ -10,7 +10,7 @@ function NavBar() {
   return (
     <Navbar bg="light" expand="lg">
       <Container fluid>
-        <Navbar.Brand href="#">
+        <Navbar.Brand href="/">
           {/*<img src={Logo} alt="Logo Drinkpedia" className="logo"></img>*/}
           <span>{"LOGO"}</span>
         </Navbar.Brand>
@@ -24,10 +24,10 @@ function NavBar() {
             {/*<Nav.Link href="#action1">Home</Nav.Link>*/}
             {/*<Nav.Link href="#action2">Link</Nav.Link>*/}
             <NavDropdown title="RECEITAS" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">
+              <NavDropdown.Item href="alcooholic">
                 Drinks Alcoólicos
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
+              <NavDropdown.Item href="nonalcooholic">
                 Drinks Não Alcoólicos
               </NavDropdown.Item>
               {/*<NavDropdown.Divider />*/}
