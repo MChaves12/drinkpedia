@@ -12,7 +12,7 @@ function NavBar() {
   return (
     <Navbar bg="light" expand="lg">
       <Container fluid>
-        <Navbar.Brand href="/">
+        <Navbar.Brand href="#">
           {/*<img src={Logo} alt="Logo Drinkpedia" className="logo"></img>*/}
           <span>{"LOGO"}</span>
         </Navbar.Brand>
@@ -23,16 +23,14 @@ function NavBar() {
             style={{ maxHeight: "100px" }}
             navbarScroll
           >
-            {/*<Nav.Link href="#action1">Home</Nav.Link>*/}
-            {/*<Nav.Link href="#action2">Link</Nav.Link>*/}
+          
             <NavDropdown title="RECEITAS" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="alcooholic">
+              <NavDropdown.Item href="#action3">
                 Drinks Alcoólicos
               </NavDropdown.Item>
-              <NavDropdown.Item href="nonalcooholic">
+              <NavDropdown.Item href="#action4">
                 Drinks Não Alcoólicos
               </NavDropdown.Item>
-              {/*<NavDropdown.Divider />*/}
             </NavDropdown>
           </Nav>
           <Form className="d-flex">

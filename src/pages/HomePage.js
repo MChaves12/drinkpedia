@@ -78,7 +78,7 @@ function HomePage() {
         <Card className="banner-img">
           <Card.Img src={ImgBanner} width={640} height={360} alt="Bartender" />
           <Card.ImgOverlay>
-            <Card.Text bg="light">
+            <Card.Text>
               Faça um drink profissional no conforto da sua casa!
             </Card.Text>
           </Card.ImgOverlay>

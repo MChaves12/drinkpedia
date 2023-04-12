@@ -14,7 +14,7 @@ function Recipe (){
         .then((response) => {
             setRecipe(response);
         });
-    }, []);
+    }, [idDrink]);
 
     return recipe.strDrink ? (
         <>
