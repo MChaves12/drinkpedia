@@ -21,7 +21,7 @@ useEffect(() =>{
   return(
     <>
         <h2>RECEITAS</h2>
-            <div>  
+            <div className="search-drinks-page">  
                 {searchDrinks.map(drink => {
                     return (
                         <RecipeLink key={drink.idDrink} drinkIMG={drink.strDrinkThumb} drinkName={drink.strDrink} idDrink={drink.idDrink} />

@@ -101,18 +101,7 @@ h2 {
   
 }
 
-.drinks-alcoolicos-page {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 990px;
-  margin-left: 250px;
-  margin-top: 35px;
-}
-
-.drinks-sem-alcool-page {
+.drinks-alcoolicos-page, .drinks-sem-alcool-page, .search-drinks-page {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
