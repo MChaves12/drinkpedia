@@ -7,6 +7,8 @@ import DrinksNaoAlcoolicos from './pages/DrinksSemAlcool';
 import Receitas from './pages/Recipe';
 
 import { Route, Routes } from 'react-router-dom';
+import { Search } from '@mui/icons-material';
+import SearchResults from './pages/SearchResults';
 
 function App() {
   return (
@@ -19,6 +21,7 @@ function App() {
         <Route path="/alcooholic" element={<DrinksAlcoolicos />} />
         <Route path="/:idDrink" element={<Receitas />} />
         <Route path="*" element={<p>ErrorPage</p>} />
+        <Route path="/search" element={<SearchResults />} />
       </Routes>
       <Footer/>
     </div>

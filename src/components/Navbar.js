@@ -4,9 +4,20 @@ import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import Search from '../pages/Search';
 
 
 function NavBar() {
+
+  /*const[drinkList, setDrinkList] = useState(drinks);
+  const [filteredDrinkList, setFilteredList] = useState(drinks);
+  
+  const filterList = (str) => {
+    const filteredList = drinkList.filter(drink =>{
+      return drink.value.toLowerCase();
+    })
+    setFilteredList(filteredList)
+  }*/
 
 
   return (
@@ -33,15 +44,7 @@ function NavBar() {
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
-          <Form className="d-flex">
-            <Form.Control
-              type="search"
-              placeholder="Search"
-              className="me-2"
-              aria-label="Search"
-            />
-            <Button variant="outline-success">Search</Button>
-          </Form>
+          <Search/>
         </Navbar.Collapse>
       </Container>
     </Navbar>
