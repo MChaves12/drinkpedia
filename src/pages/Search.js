@@ -12,13 +12,8 @@ const navigate = useNavigate();
   };
 
   async function SearchDrink() {
-    const response = await axios.get(
-      `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${search}`
-    );
-
-    setDrinksSearch([...response.data.drinks]);
-    navigate("/search")
-    console.log(response);
+    
+    navigate(`/search/${search}`)
   }
 
   console.log(drinksSearch);

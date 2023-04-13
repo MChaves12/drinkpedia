@@ -9,17 +9,6 @@ import Search from '../pages/Search';
 
 function NavBar() {
 
-  /*const[drinkList, setDrinkList] = useState(drinks);
-  const [filteredDrinkList, setFilteredList] = useState(drinks);
-  
-  const filterList = (str) => {
-    const filteredList = drinkList.filter(drink =>{
-      return drink.value.toLowerCase();
-    })
-    setFilteredList(filteredList)
-  }*/
-
-
   return (
     <Navbar bg="light" expand="lg">
       <Container fluid>

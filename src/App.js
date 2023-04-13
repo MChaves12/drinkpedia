@@ -21,7 +21,7 @@ function App() {
         <Route path="/alcooholic" element={<DrinksAlcoolicos />} />
         <Route path="/:idDrink" element={<Receitas />} />
         <Route path="*" element={<p>ErrorPage</p>} />
-        <Route path="/search" element={<SearchResults />} />
+        <Route path="/search/:search" element={<SearchResults />} />
       </Routes>
       <Footer/>
     </div>
