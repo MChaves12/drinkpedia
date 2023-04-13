@@ -5,6 +5,7 @@ import HomePage from './pages/HomePage';
 import DrinksAlcoolicos from './pages/DrinksAlcoolicos';
 import DrinksNaoAlcoolicos from './pages/DrinksSemAlcool';
 import Receitas from './pages/Recipe';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { Route, Routes } from 'react-router-dom';
 

@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import RecipeLink from '../components/RecipeLink'
 import apiControl from '../controls/apiControl'
 
+
 function DrinksAlcoolicos () {
     const [drinks, setDrinks] = useState([]);
    
