@@ -4,13 +4,26 @@ import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-//import Logo from '../logoDrinkpedia.png';
+import Search from '../pages/Search';
+
 
 function NavBar() {
+
+  /*const[drinkList, setDrinkList] = useState(drinks);
+  const [filteredDrinkList, setFilteredList] = useState(drinks);
+  
+  const filterList = (str) => {
+    const filteredList = drinkList.filter(drink =>{
+      return drink.value.toLowerCase();
+    })
+    setFilteredList(filteredList)
+  }*/
+
+
   return (
     <Navbar bg="light" expand="lg">
       <Container fluid>
-        <Navbar.Brand href="#">
+        <Navbar.Brand href="/">
           {/*<img src={Logo} alt="Logo Drinkpedia" className="logo"></img>*/}
           <span>{"LOGO"}</span>
         </Navbar.Brand>
@@ -21,27 +34,17 @@ function NavBar() {
             style={{ maxHeight: "100px" }}
             navbarScroll
           >
-            {/*<Nav.Link href="#action1">Home</Nav.Link>*/}
-            {/*<Nav.Link href="#action2">Link</Nav.Link>*/}
+          
             <NavDropdown title="RECEITAS" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">
+              <NavDropdown.Item href="alcooholic">
                 Drinks Alcoólicos
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
+              <NavDropdown.Item href="nonalcooholic">
                 Drinks Não Alcoólicos
               </NavDropdown.Item>
-              {/*<NavDropdown.Divider />*/}
             </NavDropdown>
           </Nav>
-          <Form className="d-flex">
-            <Form.Control
-              type="search"
-              placeholder="Search"
-              className="me-2"
-              aria-label="Search"
-            />
-            <Button variant="outline-success">Search</Button>
-          </Form>
+          <Search/>
         </Navbar.Collapse>
       </Container>
     </Navbar>

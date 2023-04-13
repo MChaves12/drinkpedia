@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import RecepiLink from '../components/RecipeLink'
+import RecipeLink from '../components/RecipeLink'
 
 function ByIngredient () {
 
@@ -20,7 +20,7 @@ function ByIngredient () {
                 <div className='drinks-alcoolicos-page'>  
                     {drinks.map(drink => {
                         return (
-                            <RecepiLink key={drink.idDrink} drinkIMG={drink.strDrinkThumb} drinkName={drink.strDrink} />
+                            <RecipeLink key={drink.idDrink} drinkIMG={drink.strDrinkThumb} drinkName={drink.strDrink} />
                         )
                     })}
                 </div>
