@@ -17,8 +17,8 @@ function Recipe (){
     }, [idDrink]);
 
     return recipe.strDrink ? (
-        <>
-            <h2>{recipe.strDrink}</h2>
+        <div className='recipe-page'>
+            <h2 className='page-title'>{recipe.strDrink}</h2>
                 <div className='recipe-container'>
                     <img className='recipe-img' src={recipe.strDrinkThumb} alt='drink'></img>
                     <div className='recipe-instructions-container'>
@@ -35,7 +35,7 @@ function Recipe (){
                         <p>{recipe.strInstructions}</p>
                     </div>
                 </div>
-        </>
+        </div>
     ) : <p>carregando....</p>;
 };
 
