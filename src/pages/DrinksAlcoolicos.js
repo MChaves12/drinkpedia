@@ -15,7 +15,7 @@ function DrinksAlcoolicos () {
 
     return(
         <>
-            <h2>RECEITAS</h2>
+            <h2 className='page-title'>RECEITAS</h2>
                 <div className='drinks-alcoolicos-page'>  
                     {drinks.map(drink => {
                         return (

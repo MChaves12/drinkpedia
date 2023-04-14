@@ -32,7 +32,16 @@ class apiControl {
         } catch (error) {
             throw error
         }
-    }    
+    }
+    
+    async getDrinkByName (search) {
+        try {
+            const { data } = await this.api.get(`search.php?s=${search}`);
+            return data.drinks;
+        } catch (error) {
+            throw error
+        }
+    }
 }
 
 const api = new apiControl();

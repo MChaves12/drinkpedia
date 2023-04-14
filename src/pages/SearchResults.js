@@ -1,26 +1,25 @@
 import RecipeLink from "../components/RecipeLink";
 import { useEffect, useState } from "react";
 import { useParams } from 'react-router-dom';
-import axios from 'axios';
+import apiControl from '../controls/apiControl'
 
 function SearchResults() {
 
   const [searchDrinks, setSearchDrinks] = useState([]);
 
-const { search } = useParams();
+  const { search } = useParams();
 
-useEffect(() =>{
-  axios.get(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${search}`)
-  .then((response) =>{
-    setSearchDrinks(response.data.drinks)
-    console.log(response);
-  })
-}, [search]);
+  useEffect(() => {
+    apiControl.getDrinkByName(search)
+          .then((response) => {
+              setSearchDrinks(response);
+          });
+  }, [search]);
 
 
   return(
     <>
-        <h2>RECEITAS</h2>
+        <h2 className='page-title'>RECEITAS</h2>
             <div className="search-drinks-page">  
                 {searchDrinks.map(drink => {
                     return (

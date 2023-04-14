@@ -1,20 +1,19 @@
-import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
-import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Search from '../pages/Search';
-
+import logo from '../assets/logoDrinkpedia.png';
+ 
 
 function NavBar() {
 
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar bg="dark" variant="dark" expand="lg">
       <Container fluid>
         <Navbar.Brand href="/">
-          {/*<img src={Logo} alt="Logo Drinkpedia" className="logo"></img>*/}
-          <span>{"LOGO"}</span>
+          <img src={logo} alt="Logo Drinkpedia" className="logo-icon"></img>
+          <span className="logo">DRINKPEDIA</span>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
