@@ -17,7 +17,7 @@ function SearchResults() {
   }, [search]);
 
 
-  return(
+  return (
     <>
         <h2 className='page-title'>RECEITAS</h2>
             <div className="search-drinks-page">  
