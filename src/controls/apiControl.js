@@ -12,7 +12,7 @@ class apiControl {
             const { data } = await this.api.get('/filter.php?a=Alcoholic');
             return data.drinks;
         } catch (error) {
-            throw error
+            throw error;
         }
     }
 
@@ -21,7 +21,7 @@ class apiControl {
             const { data } = await this.api.get('/filter.php?a=Non_Alcoholic');
             return data.drinks;
         } catch (error) {
-            throw error
+            throw error;
         }
     }
     
@@ -30,7 +30,7 @@ class apiControl {
             const { data } = await this.api.get(`/lookup.php?i=${idDrink}`);
             return data.drinks[0];
         } catch (error) {
-            throw error
+            throw error;
         }
     }
     
@@ -39,7 +39,16 @@ class apiControl {
             const { data } = await this.api.get(`search.php?s=${search}`);
             return data.drinks;
         } catch (error) {
-            throw error
+            throw error;
+        }
+    }
+
+    async getRandomDrink () {
+        try {
+            const { data } = await this.api.get('/random.php');
+            return data.drinks[0];
+        } catch (error) {
+            throw error;
         }
     }
 }
