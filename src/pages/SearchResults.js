@@ -1,4 +1,5 @@
 import RecipeLink from "../components/RecipeLink";
+import ErrorPage from "./ErrorPage";
 import { useEffect, useState } from "react";
 import { useParams } from 'react-router-dom';
 import apiControl from '../controls/apiControl'
@@ -17,7 +18,7 @@ function SearchResults() {
   }, [search]);
 
 
-  return (
+  return search.strDrink ?(
     <>
         <h2 className='page-title'>RECEITAS</h2>
             <div className="search-drinks-page">  
@@ -28,7 +29,7 @@ function SearchResults() {
                 })}
             </div>
     </>
-);
+): <ErrorPage/>;
 };
 
 export default SearchResults;
