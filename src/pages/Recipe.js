@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import apiControl from '../controls/apiControl'
+import ErrorPage from './ErrorPage';
 
 function Recipe (){
     
@@ -36,7 +37,7 @@ function Recipe (){
                     </div>
                 </div>
         </div>
-    ) : <p>carregando....</p>;
+    ) : <ErrorPage/>;
 };
 
 export default Recipe;

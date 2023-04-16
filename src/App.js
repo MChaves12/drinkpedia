@@ -6,6 +6,7 @@ import DrinksAlcoolicos from './pages/DrinksAlcoolicos';
 import DrinksNaoAlcoolicos from './pages/DrinksSemAlcool';
 import Receitas from './pages/Recipe';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import ErrorPage from './pages/ErrorPage';
 
 import { Route, Routes } from 'react-router-dom';
 import { Search } from '@mui/icons-material';
@@ -21,7 +22,7 @@ function App() {
         <Route path="/nonalcooholic" element={<DrinksNaoAlcoolicos />} />
         <Route path="/alcooholic" element={<DrinksAlcoolicos />} />
         <Route path="/:idDrink" element={<Receitas />} />
-        <Route path="*" element={<p>ErrorPage</p>} />
+        <Route path="*" element={<ErrorPage/>} />
         <Route path="/search/:search" element={<SearchResults />} />
       </Routes>
       <Footer/>
