@@ -11,7 +11,7 @@ function RandomDrinkBanner () {
             <div className='sujestao-description'>
                 <h2>Não sabe por onde começar?</h2>
                 <h4>Veja uma sujestão do nosso bartender.</h4>
-                <Link className=''><button className='sujestao-btn'>Me indique um drink</button></Link>
+                <Link to='/aleatorio' className=''><button className='sujestao-btn'>Me indique um drink</button></Link>
             </div>
         </div> 
     );
