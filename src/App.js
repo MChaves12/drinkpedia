@@ -8,7 +8,6 @@ import Receitas from './pages/Recipe';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ErrorPage from './pages/ErrorPage';
 import { Route, Routes } from 'react-router-dom';
-import { Search } from '@mui/icons-material';
 import SearchResults from './pages/SearchResults';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import DrinkAleatorio from './pages/DrinkAleatorio';
