@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import apiControl from '../controls/apiControl';
+
 function DrinkAleatorio () {
 
     const [drink, setDrink] = useState([]);
@@ -11,7 +12,7 @@ function DrinkAleatorio () {
        })
     }, []);
 
-    return(
+    return (
         <>
             <div className='recipe-page'>
             <h2 className='page-title'>{drink.strDrink}</h2>
@@ -33,7 +34,7 @@ function DrinkAleatorio () {
                 </div>
         </div>
         </>
-    );
+    ) ;
 };
 
 export default DrinkAleatorio;
