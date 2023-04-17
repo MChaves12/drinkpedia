@@ -17,8 +17,9 @@ function SearchResults() {
           });
   }, [search]);
 
+  console.log(search);
 
-  return search.strDrink ?(
+  return searchDrinks ? (
     <>
         <h2 className='page-title'>RECEITAS</h2>
             <div className="search-drinks-page">  

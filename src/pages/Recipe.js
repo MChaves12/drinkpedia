@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import apiControl from '../controls/apiControl'
-import ErrorPage from './ErrorPage';
+import Spinner from '../components/Spinner';
 
 function Recipe (){
     
@@ -37,7 +37,7 @@ function Recipe (){
                     </div>
                 </div>
         </div>
-    ) : <ErrorPage/>;
+    ) : <Spinner />;
 };
 
 export default Recipe;

@@ -1,4 +1,5 @@
 import { MDBFooter, MDBContainer, MDBCol, MDBRow } from "mdb-react-ui-kit";
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
@@ -6,8 +7,7 @@ export default function Footer() {
       <MDBContainer className="p-4">
         <MDBRow>
           <MDBCol lg="3" md="12" className="logo">
-          <span>DRINKPEDIA</span>
-            {/*<img src="logoDrinkpedia.png" alt="Logo Drinkpedia"></img>*/}
+          <Link to='/' style={{textDecoration:'none', color: 'white'}}><span>DRINKPEDIA</span></Link>
           </MDBCol>
 
           <MDBCol lg="5" md="12" className="mb-4 mb-md-0">

@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
-import RecipeLink from '../components/RecipeLink'
-import apiControl from '../controls/apiControl'
+import RecipeLink from '../components/RecipeLink';
+import apiControl from '../controls/apiControl';
+import Spinner from '../components/Spinner';
 
 
 function DrinksAlcoolicos () {
@@ -13,7 +14,7 @@ function DrinksAlcoolicos () {
         });
     }, []);
 
-    return(
+    return drinks ? (
         <>
             <h2 className='page-title'>RECEITAS</h2>
                 <div className='drinks-alcoolicos-page'>  
@@ -24,7 +25,7 @@ function DrinksAlcoolicos () {
                     })}
                 </div>
         </>
-    );
+    ) : <Spinner />;
 };
 
 export default DrinksAlcoolicos;
