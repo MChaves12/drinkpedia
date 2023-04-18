@@ -25,14 +25,14 @@ export default function Footer() {
 
             <ul className="list-unstyled">
               <li>
-                <a href="alcooholic" className="text-white">
+                <Link to='/alcooholic' className="text-white">
                   Drinks Alcoólicos
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="nonalcooholic" className="text-white">
+                <Link to='/nonalcooholic' className="text-white">
                   Drinks Não Alcoólicos
-                </a>
+                </Link>
               </li>
             </ul>
           </MDBCol>

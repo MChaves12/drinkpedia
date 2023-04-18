@@ -4,7 +4,7 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Search from '../pages/Search';
 import logo from '../assets/logoDrinkpedia.png';
- 
+
 
 function NavBar() {
 
@@ -24,10 +24,10 @@ function NavBar() {
           >
           
             <NavDropdown title="RECEITAS" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="alcooholic">
+              <NavDropdown.Item href="/alcooholic">
                 Drinks Alcoólicos
               </NavDropdown.Item>
-              <NavDropdown.Item href="nonalcooholic">
+              <NavDropdown.Item href="/nonalcooholic">
                 Drinks Não Alcoólicos
               </NavDropdown.Item>
             </NavDropdown>
