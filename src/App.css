@@ -229,3 +229,150 @@ h1{
   background-color: rgb(255, 136, 0);
   transition: all 0.5s;
 }
+
+@media screen and (max-width: 380px) {
+
+  .sujestao-container{
+    width: 375px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0px;
+
+  }
+
+  .sujestao-img {
+    width: 290px;
+
+  }
+
+  .sujestao-description h2, h4 {
+    font-size: 15px;
+    width: 250px;
+    text-align: center;
+  }
+
+  .sujestao-description {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .sujestao-btn {
+    margin: 0px;
+  }
+
+  .recipe-page {
+    background-image: none;
+  }
+
+  .recipe-container {
+    width: 375px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+
+  }
+
+  .recipe-img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .drinks-alcoolicos-page, .drinks-sem-alcool-page, .search-drinks-page {
+    width: 375px;
+    margin: 0px;
+
+  }
+
+}
+
+@media screen and (max-width: 1200px ) {
+  
+  .sujestao-container{
+    width: 1200px;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0px;
+
+  }
+
+  .sujestao-img {
+    width: 600px;
+
+  }
+
+  .recipe-page {
+    height: 800px;
+    
+  }
+
+  .recipe-container {
+    width: 1200;
+    height: 600px;
+    display: flex;
+    margin: 90px;
+
+  }
+
+  .drinks-alcoolicos-page, .drinks-sem-alcool-page, .search-drinks-page {
+    width: 1100px;
+    margin-left: 40px;
+    
+  }
+
+  @media screen and (max-width: 840px ) {
+    .sujestao-container{
+      width: 820px;
+      height: 700px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      margin: 0px;
+
+    }
+  
+    .sujestao-img {
+      width: 600px;
+  
+    }
+
+    .sujestao-description {
+      align-items: center;
+
+    }
+    
+    .sujestao-btn {
+      margin-top: 40px;
+    }
+
+    .recipe-page {
+      height: 800px;
+      
+    }
+  
+    .recipe-container {
+      width: 800px;
+      height: 600px;
+      display: flex;
+      margin-left: 5px;
+  
+    }
+
+    .drinks-alcoolicos-page, .drinks-sem-alcool-page, .search-drinks-page {
+      width: 700px;
+    
+      
+    }
+
+  }
+
+}
