@@ -1,7 +1,7 @@
 # Drinkpedia
 
-Drinkpedia is a webapp developed by Natalia Nossak em me - Matheu Chaves - and it is the second project made to our Web Dev Bootcamp at Iron Hack.
-In this project we could at test our knowledge working with React and API's. To build this project we used React Bootstrap  for some components and Axios to consume de Api, but also, the majority of the project styles were made with vanilla CSS.
+Drinkpedia is a webapp developed by Natalia Nossak and me, Matheu Chaves. This is the second project made to our Web Dev Bootcamp at Iron Hack.
+In this project we could test our knowledge working with React and API's. To build this project we used React Bootstrap for some components and Axios to consume de Api, but also, the majority of the project styles were made with vanilla CSS.
 
 # The Project
 
