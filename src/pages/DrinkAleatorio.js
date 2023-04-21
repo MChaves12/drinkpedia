@@ -12,6 +12,13 @@ function DrinkAleatorio () {
        })
     }, []);
 
+    function novoDrink () {
+        apiControl.getRandomDrink()
+       .then((response) => {
+        setDrink(response);
+       })
+    }
+
     return (
         <>
             <div className='recipe-page'>
@@ -30,6 +37,7 @@ function DrinkAleatorio () {
                         </ul>
                         <h3>Modo de preparo</h3>
                         <p>{drink.strInstructions}</p>
+                        <button onClick={novoDrink} className='sujestao-btn'>Novo Drink</button>
                     </div>
                 </div>
         </div>
